@@ -1,1 +1,1 @@
-// Navigtion component:
+// Navigation component which will be exported

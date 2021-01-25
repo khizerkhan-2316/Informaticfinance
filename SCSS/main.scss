@@ -1,4 +1,16 @@
 // Import of google fonts:
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+//SCSS Variables
+$heading-font: "Montserrat", sans-serif;
+$text-font: "Source Sans Pro", sans-serif;
+$button-font: "Roboto Slab", serif;
+$font-color: #ffffff;
+
+$section-backgroundColor: #2e2251;
+$button-backgroundColor: #f56d3c;
 
 * {
   box-sizing: border-box;
@@ -7,4 +19,25 @@
 body {
   margin: 0;
   padding: 0;
+  background: #1f1c38;
+}
+
+#henaf {
+  font-family: $heading-font;
+  font-size: 30px;
+
+  #test {
+    width: 300px;
+    height: 500px;
+    background-color: $section-backgroundColor;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 500px) {
 }

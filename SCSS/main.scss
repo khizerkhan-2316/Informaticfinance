@@ -30,6 +30,27 @@ body {
   background: #1f1c38;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $font-color;
+  font-family: $heading-font;
+  text-transform: uppercase;
+}
+
+.bookmarks,
+#options,
+#portfolio,
+#markets {
+  box-shadow: 1px 13px 20px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 1px 13px 20px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 1px 13px 20px rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+}
+
 nav {
   width: 100%;
   height: 80px;
@@ -76,22 +97,175 @@ nav {
 
     li:first-child a:hover {
       color: $font-color;
-      transition: 0.15s ease-in-out;
+      background-color: $button-backgroundColor;
+      padding: 7.5px;
+      border: none;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+
+main {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid green;
+
+  .main-sections {
+    width: 37%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+
+    #heading {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 35px;
+      }
+    }
+
+    .bookmarks {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $section-backgroundColor;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    #second-child {
+      margin-top: 25px;
+    }
+  }
+
+  #portfolio_Options {
+    width: 100%;
+    height: 25vh;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+
+    #portfolio {
+      width: 50%;
+      height: 100%;
+      background-color: $section-backgroundColor;
+      border-color: none;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      h2 {
+        text-align: center;
+        border-bottom: 1px solid white;
+      }
+
+      hr {
+        width: 80%;
+        margin: 0;
+      }
+    }
+
+    #options {
+      width: 35%;
+      height: 100%;
+      background-color: $section-backgroundColor;
+      border-color: none;
+
+      #options_image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          width: 30px;
+
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+      }
+
+      #options_information {
+        width: 100%;
+        height: 77%;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        flex-flow: row wrap;
+
+        .information_Box {
+          width: 80%;
+          height: 4vh;
+          border: 1px solid crimson;
+          margin-top: 20px;
+          border-radius: 16px;
+          background-color: #83afb4;
+          border-color: none;
+          color: white;
+          font-family: $text-font;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  #markets {
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    border-radius: 16px;
+    background-color: $section-backgroundColor;
+    border-color: none;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+
+    hr {
+      width: 80%;
+      margin-top: 0;
+    }
+
+    #market_buttons {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      button {
+        font-family: $text-font;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 17px;
+        color: white;
+      }
+
+      button:first-child {
+        background-color: #92d36e;
+      }
+
+      button:nth-child(2) {
+        background-color: $button-backgroundColor;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  nav {
-    .navigation_containers {
-      width: 30%;
-    }
-
-    ul {
-      width: 50%;
-    }
-  }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   nav {
     .navigation_containers {
@@ -112,7 +286,6 @@ nav {
   .display {
     display: block;
   }
-  /* Style the navigation menu */
   .topnav {
     overflow: hidden;
     background-color: #1f1c38;
@@ -120,12 +293,10 @@ nav {
     border-bottom: 1px solid white;
   }
 
-  /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
   }
 
-  /* Style navigation menu links */
   .topnav {
     a {
       color: white;
@@ -151,7 +322,6 @@ nav {
     }
   }
 
-  /* Style the hamburger menu */
   .topnav a.icon {
     background: #1f1c38;
     margin-top: 13px;
@@ -161,9 +331,6 @@ nav {
     bottom: 0;
   }
 
-  /* Add a grey background color on mouse-over */
-
-  /* Style the active link (or home/logo) */
   .active {
     background-color: #1f1c38;
     color: #1f1c38;

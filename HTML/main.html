@@ -10,16 +10,54 @@
     <link rel="stylesheet" href="../SCSS/main.css" />
   </head>
 
-  <div id="app"><h1>{{array}}</h1></div>
-
-  <div id="henaf">
-    <p>Hejsa</p>
-
-    <div id="test">{{greeting}}</div>
-  </div>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Nav section for desktop & laptop: -->
+    <nav class="visabillity">
+      <section class="navigation_containers">
+        <img src="../Assets/images/logo.png" alt="logo" />
+      </section>
 
-    <script src="../scripts/main.js" async defer type="module"></script>
+      <ul>
+        <li>
+          <a href="#">Dashbord</a>
+        </li>
+        <li>|</li>
+        <li><a href="#">Products</a></li>
+        <li>|</li>
+        <li><a href="#">About</a></li>
+        <li>|</li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Nav section for Ipad og mobile-->
+    <div class="topnav display">
+      <a href="#home" class="active"><img src="../Assets/images/logo.png" /></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#Dashboard">Dashboard</a>
+        <a href="#contact">Products</a>
+        <a href="#about">About</a>
+        <a href="#about">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!--Nav section ended-->
+
+    <!-- Main section beginned-->
+
+    <main></main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="../scripts/main.js" async defer></script>
   </body>
 </html>

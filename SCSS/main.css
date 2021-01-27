@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.display {
+  display: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -12,14 +16,142 @@ body {
   background: #1f1c38;
 }
 
-#henaf {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #1f1c38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid white;
 }
 
-#henaf #test {
-  width: 300px;
-  height: 500px;
-  background-color: #2e2251;
+nav .navigation_containers {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navigation_containers img {
+  width: 50px;
+  border-radius: 365px;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul li:nth-child(even),
+nav ul li:first-child a,
+nav ul a:hover {
+  color: #f56d3c;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+nav ul li:first-child a:hover {
+  color: #ffffff;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav .navigation_containers {
+    width: 30%;
+  }
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  nav .navigation_containers {
+    width: 20%;
+  }
+  nav ul {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .visabillity {
+    display: none;
+  }
+  .display {
+    display: block;
+  }
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #1f1c38;
+    position: relative;
+    border-bottom: 1px solid white;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+  .topnav #myLinks a:first-child {
+    color: #f56d3c;
+  }
+  .topnav a img {
+    width: 40px;
+    border-radius: 365px;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #1f1c38;
+    margin-top: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  /* Add a grey background color on mouse-over */
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #1f1c38;
+    color: #1f1c38;
+  }
 }
 /*# sourceMappingURL=main.css.map */

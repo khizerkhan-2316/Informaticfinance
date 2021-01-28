@@ -162,20 +162,19 @@ main {
       height: 30vh;
       background: $section-backgroundColor;
       margin-top: 70px;
-    }
 
-    #topgainer {
-      font-family: $text-font;
-      font-size: 25px;
-      color: $font-color;
-      background: $button-backgroundColor;
-      border-radius: 16px;
-      border-color: transparent;
-      position: relative;
-      z-index: 10;
-      margin-top: 40px;
-      padding: 10px;
-      margin-bottom: -95px;
+      #topgainer {
+        font-family: $text-font;
+        font-size: 25px;
+        color: $font-color;
+        background: $button-backgroundColor;
+        border-radius: 16px;
+        border-color: transparent;
+        position: relative;
+        z-index: 10;
+        padding: 10px;
+        width: 100%;
+      }
     }
   }
 

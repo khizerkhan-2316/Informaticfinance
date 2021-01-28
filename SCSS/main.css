@@ -191,7 +191,7 @@ main .main-sections #topGainers {
   margin-top: 70px;
 }
 
-main .main-sections #topgainer {
+main .main-sections #topGainers #topgainer {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
   color: #ffffff;
@@ -200,9 +200,8 @@ main .main-sections #topgainer {
   border-color: transparent;
   position: relative;
   z-index: 10;
-  margin-top: 40px;
   padding: 10px;
-  margin-bottom: -95px;
+  width: 100%;
 }
 
 main #portfolio_Options {

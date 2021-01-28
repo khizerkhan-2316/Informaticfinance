@@ -113,7 +113,7 @@ nav ul li:first-child a:hover {
 
 main {
   width: 100vw;
-  height: 80vh;
+  height: auto;
   margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,7 +191,7 @@ main .main-sections #topGainers {
   margin-top: 70px;
 }
 
-main .main-sections #topGainers #topgainer {
+main .main-sections #topgainer {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 25px;
   color: #ffffff;
@@ -200,8 +200,9 @@ main .main-sections #topGainers #topgainer {
   border-color: transparent;
   position: relative;
   z-index: 10;
+  margin-top: 40px;
   padding: 10px;
-  width: 100%;
+  margin-bottom: -95px;
 }
 
 main #portfolio_Options {

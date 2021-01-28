@@ -78,7 +78,11 @@
           </section>
           <section id="options">
             <section id="options_image">
-              <img src="../Assets/images/options_icon.png" alt="options_icon" />
+              <img
+                src="../Assets/images/options_icon.png"
+                alt="options_icon"
+                id="option_popup"
+              />
             </section>
             <section id="options_information">
               <section class="information_Box" id="balance">
@@ -93,7 +97,6 @@
 
         <section id="markets">
           <h2>MARKETS</h2>
-          <hr />
 
           <section id="market_buttons">
             <button>COINMARKET</button>
@@ -101,7 +104,11 @@
           </section>
         </section>
       </section>
-      <section class="main-sections"></section>
+      <section class="main-sections">
+        <section id="chartJS_Section"></section>
+        <button id="topgainer">TOP GAINERS</button>
+        <section id="topGainers"></section>
+      </section>
     </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

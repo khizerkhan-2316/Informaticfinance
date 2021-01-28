@@ -372,6 +372,12 @@ main #markets #market_buttons button:nth-child(2) {
   main .main-sections {
     width: 80%;
   }
+  main .main-sections #chartJS_Section {
+    margin-bottom: -10px;
+  }
+  main #markets {
+    margin-bottom: -30px;
+  }
   .visabillity {
     display: none;
   }
@@ -474,6 +480,12 @@ main #markets #market_buttons button:nth-child(2) {
   main .main-sections {
     width: 80%;
   }
+  main .main-sections #markets {
+    margin-bottom: -30px;
+  }
+  main .main-sections #chartJS_Section {
+    margin-bottom: -10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -486,7 +498,6 @@ main #markets #market_buttons button:nth-child(2) {
         -ms-flex-flow: column;
             flex-flow: column;
     width: 100%;
-    border: 1px solid white;
     height: auto;
   }
   main #portfolio_Options #portfolio {
@@ -497,6 +508,15 @@ main #markets #market_buttons button:nth-child(2) {
     width: 100%;
     margin-top: 30px;
     height: 250px;
+  }
+  main .main-sections {
+    width: 80%;
+  }
+  main .main-sections #markets {
+    margin-bottom: -45px;
+  }
+  main .main-sections #chartJS_Section {
+    margin-bottom: -25px;
   }
 }
 /*# sourceMappingURL=main.css.map */

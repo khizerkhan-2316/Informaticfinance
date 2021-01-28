@@ -123,6 +123,8 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
 }
 
 main .main-sections {
@@ -353,6 +355,49 @@ main #markets #market_buttons button:nth-child(2) {
   background-color: #f56d3c;
 }
 
+footer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 8px 0px 0px 0px;
+}
+
+footer #mobile {
+  display: none;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   nav .navigation_containers {
     width: 20%;
@@ -422,6 +467,9 @@ main #markets #market_buttons button:nth-child(2) {
     background-color: #1f1c38;
     color: #1f1c38;
   }
+  footer ul {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -486,6 +534,9 @@ main #markets #market_buttons button:nth-child(2) {
   main .main-sections #chartJS_Section {
     margin-bottom: -10px;
   }
+  footer ul {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -517,6 +568,21 @@ main #markets #market_buttons button:nth-child(2) {
   }
   main .main-sections #chartJS_Section {
     margin-bottom: -25px;
+  }
+  footer #desktop_tablet {
+    display: none;
+  }
+  footer #mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */

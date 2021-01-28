@@ -114,6 +114,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
 
   .main-sections {
     width: 37%;
@@ -287,7 +289,33 @@ main {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    color: $font-color;
+    font-family: $heading-font;
+  }
+
+  p {
+    color: $font-color;
+    font-family: $text-font;
+    margin: 8px 0px 0px 0px;
+  }
+
+  #mobile {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -375,6 +403,12 @@ main {
     background-color: #1f1c38;
     color: #1f1c38;
   }
+
+  footer {
+    ul {
+      width: 70%;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -451,6 +485,12 @@ main {
       }
     }
   }
+
+  footer {
+    ul {
+      width: 70%;
+    }
+  }
 }
 @media screen and (max-width: 600px) {
   main {
@@ -482,6 +522,19 @@ main {
       #chartJS_Section {
         margin-bottom: -25px;
       }
+    }
+  }
+
+  footer {
+    #desktop_tablet {
+      display: none;
+    }
+
+    #mobile {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      height: 200px;
     }
   }
 }

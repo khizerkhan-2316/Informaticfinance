@@ -146,6 +146,11 @@ main {
       img {
         width: 40px;
       }
+
+      p {
+        color: $font-color;
+        font-family: $text-font;
+      }
     }
 
     #second-child {
@@ -176,6 +181,36 @@ main {
         z-index: 10;
         padding: 10px;
         width: 100%;
+      }
+
+      #topGainer_box {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+        color: $font-color;
+        justify-content: center;
+        hr {
+          width: 100%;
+          margin: auto;
+        }
+        ul {
+          list-style-type: none;
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          border: 1px solid white;
+          padding: 1px;
+
+          li:nth-child(n + 1) {
+            font-family: $heading-font;
+          }
+
+          li:nth-child(1n + 3) {
+            font-family: $text-font;
+          }
+        }
       }
     }
   }

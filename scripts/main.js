@@ -27,7 +27,6 @@ const bitcoin = () => {
   axios
     .request(options)
     .then(function (response) {
-      console.log(response.data.tickers);
       let bitcoin = response.data.tickers[0].last;
       let target = document.querySelector("#marketValueBTC");
       target.innerHTML = `$ ${bitcoin}`;
@@ -107,6 +106,11 @@ const marketvalueChange = () => {
       console.error(error);
     });
 };
+ether();
+
+bitcoin();
+
+marketvalueChange();
 
 setInterval(function () {
   ether();
@@ -114,4 +118,4 @@ setInterval(function () {
   bitcoin();
 
   marketvalueChange();
-}, 20000);
+}, 60000);

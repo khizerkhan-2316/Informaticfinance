@@ -162,6 +162,14 @@ main {
       height: 30vh;
       margin-top: 85px;
       background: $section-backgroundColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      #myChart {
+        width: 100px;
+        height: 90%;
+      }
     }
 
     #topGainers {

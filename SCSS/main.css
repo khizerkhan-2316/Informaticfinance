@@ -189,6 +189,20 @@ main .main-sections #chartJS_Section {
   height: 30vh;
   margin-top: 85px;
   background: #2e2251;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-sections #chartJS_Section #myChart {
+  width: 100px;
+  height: 90%;
 }
 
 main .main-sections #topGainers {

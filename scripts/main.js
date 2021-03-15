@@ -4,6 +4,7 @@ console.log("Script is running");
 import { bitcoin } from "./modules/bitcoin.js";
 import { ether } from "./modules/etherum.js";
 import { marketvalueChange } from "./modules/marketchange.js";
+import { ctx, myLineChart } from "./modules/chartjs.js";
 
 // Js for hamburger menu:
 
@@ -32,22 +33,3 @@ setInterval(function () {
 
   marketvalueChange();
 }, 60000);
-
-// ChartJs for Bitcoin data
-
-const ctx = document.getElementById("myChart");
-var myLineChart = new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950],
-    datasets: [
-      {
-        data: [86, 114, 106, 106, 107, 111, 133, 221],
-        label: "BTC",
-        borderColor: "#FFF",
-        fill: false,
-      },
-    ],
-  },
-  options: options,
-});
